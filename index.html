@@ -1,48 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="newApp">
 
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </head>
 
-<body>
-<h1>hello</h1>
+<body ng-controller="dataFetch">
 
-<div ng-app="" ng-controller="formController">
-  <form novalidate>
-    First Name:<br>
-    <input type="text" ng-model="user.firstName"><br>
-    Last Name:<br>
-    <input type="text" ng-model="user.lastName">
-    <br><br>
-    <button ng-click="reset()">RESET</button>
-  </form>
-  <p>form = {{user }}</p>
-  <p>master = {{master}}</p>
-</div>
-
-<div ng-app="" ng-controller="customersController">
-<ul>
-  <li ng-repeat="x in names">
-    {{ x.Name + ', ' + x.Country }}
-  </li>
-</ul>
-</div>
-
+<table>
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+      </tr>
+      <tr ng-repeat="country in countries">
+        <td>{{countries.Name}}</td>
+        <td>{{countries.Country}}</td>
+      </tr>
+</table>
+ 
 <script>
-function customersController($scope,$http) {
-  $http.get("http://www.w3schools.com//website/Customers_JSON.php")
-  .success(function(response) {$scope.names = response;});
-}
-
-function formController ($scope) {
-    $scope.master = {firstName:"John", lastName:"Doe"};
-    $scope.reset = function() {
-        $scope.user = angular.copy($scope.master);
-    };
-    $scope.reset();
-}
+    var newapp = angular.module('newApp', []);
+    newapp.controller('dataFetch', function ($scope, $http){
+        $http.get('http://www.w3schools.com//website/Customers_JSON.php').success(function(data) {
+            $scope.countries = data;
+        });
+    });
 </script>
-
 </body>
 </html>
