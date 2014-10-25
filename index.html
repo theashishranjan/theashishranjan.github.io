@@ -19,7 +19,8 @@
     </table>
 
     <form novalidate>
-        Email<input type="text" ng-model="email"/><br/>
+        Email: <input type="text" ng-model="email"/><br/>
+        Password: <input type="text" ng-model="passwprd"/><br/>
         <button ng_click="login()">login</button>
     </form>
     {{ user.email }}
@@ -31,6 +32,7 @@
             alert($scope.email);
             $http.get('http://www.w3schools.com//website/Customers_JSON.php').success(function(data) {
             $scope.countries = data;
+            console.log(data);
             });
         };
     });
