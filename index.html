@@ -17,13 +17,14 @@
             <td>{{country.Country}}</td>
           </tr>
     </table>
-</div> 
-<div ng-controller="formController">
+
+<!-- <div ng-controller="formController"> -->
     <form novalidate>
         Email<input type="text" ng-model="user.email"><br/>
     </form>
     {{ user.email }}
-</div>
+<!-- </div> -->
+</div> 
 <script>
     var newapp = angular.module('newApp', []);
     newapp.controller('dataFetch', function ($scope, $http){
