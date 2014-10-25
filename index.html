@@ -30,10 +30,10 @@
     newapp.controller('dataFetch', function ($scope, $http){
         $scope.login  = function() {
             alert($scope.email);
-            var link = 'https://www.buxfer.com/api/login?userid=john@doe.com&password=dohdoh';
+            var link = 'https://www.buxfer.com/api/login?userid=ashishranjaniitd@gmail.com.com&password=buxfer123';
             $http.get(link).success(function(data) {
-            $scope.countries = data;
-            console.log(data);
+                $scope.countries = data;
+                console.log(data);
             });
         };
     });
