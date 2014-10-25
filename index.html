@@ -2,7 +2,7 @@
 <html ng-app="newApp">
 
 <head>
-<script src="angularjs.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </head>
 
 <body >
@@ -30,7 +30,8 @@
     newapp.controller('dataFetch', function ($scope, $http){
         $scope.login  = function() {
             alert($scope.email);
-            $http.get('http://www.w3schools.com//website/Customers_JSON.php').success(function(data) {
+            var link = 'https://www.buxfer.com/api/login?userid=john@doe.com&password=dohdoh';
+            $http.get(link).success(function(data) {
             $scope.countries = data;
             console.log(data);
             });
