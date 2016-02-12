@@ -1,0 +1,35 @@
+name: Ashish Ranjan
+bio: 'These days, the ﬁeld of electronics is divided into “haves” and “havenots” – people who can program microcontrollers and people who can’t.'
+picture: 'assets/images/profile.jpg'
+
+url: http://theashishranjan.github.io
+
+permalink: /:Ashish Ranjan/
+
+# analytics: 'UA-MYANALYTICS'
+
+facebook: ashishranjan04
+twitter: theashishranjan
+instagram: ashishrranjan
+linkedin: in/ashishranjan04
+youtube: channel/UCQPUlMWTZfuXYu71v0B7H6A
+github: theashishranjan
+email: ashishranjanw@gmail.com
+
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor]
+
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+gems:
+  - jemoji
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+
+jekyll-mentions:
+    base_url: https://github.com
