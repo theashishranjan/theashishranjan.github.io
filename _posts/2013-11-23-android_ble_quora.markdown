@@ -1,7 +1,7 @@
 ---
-title: "Hello World!"
+title: "Android and Bluetooth Low Energy (BTLE)"
 layout: post
-date: 2015-11-24 14:40
+date: 2013-11-23 14:40
 tag: markdown
 #star: true
 ---
