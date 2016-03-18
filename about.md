@@ -15,6 +15,6 @@ I spent majority of my college years working on embedded systems, sensors(mainly
 
 I consider myself very good at explaning techinal thing to non technical crowd and this has enabled me help a lot of non-tech background startup founders with their techincal setup.
 
-Apart from professional jobs listed on LinkedIn, I am also a selected freelance member of [Gisgter](http://www.gigster.com) community and was one of the first 400 members of this amazing group.
+Apart from professional jobs listed on LinkedIn, I am also a selected freelance member of [Gigster](http://www.gigster.com) community and was one of the first 400 members of this amazing group.
 
 Markdown is my goto writing style and trailing white spaces get on my nerves!
