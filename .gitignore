@@ -2,3 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 travis.sh
+node_modules
