@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'github-pages'
 gem 'rake'
-gem 'pygments.rb'
+gem 'pygments.rb', '~> 1.2.1'
 gem 'jekyll'
 gem 'html-proofer'
 gem 'jemoji'
